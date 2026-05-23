@@ -43,7 +43,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 ),
               ),
             )
-          : ModernAndProfessionalPageWidget(),
+          : QsmWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -58,12 +58,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                     ),
                   ),
                 )
-              : ModernAndProfessionalPageWidget(),
-        ),
-        FFRoute(
-          name: ModernAndProfessionalPageWidget.routeName,
-          path: ModernAndProfessionalPageWidget.routePath,
-          builder: (context, params) => ModernAndProfessionalPageWidget(),
+              : QsmWidget(),
         ),
         FFRoute(
           name: QsmWidget.routeName,
